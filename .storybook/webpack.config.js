@@ -60,6 +60,7 @@ module.exports = ({ config, mode }) => ({
 		alias: {
 			...config.alias,
 			assets: path.resolve(__dirname, './assets'),
+			'@earth': path.resolve(__dirname, '../src'),
 		},
 		extensions: [...config.resolve.extensions, '.ts', '.tsx'],
 	},

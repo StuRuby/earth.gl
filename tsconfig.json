@@ -17,7 +17,7 @@
     "baseUrl": "./",
     "paths": {
       "@earth/*": [
-        "./src/*"
+        "./src/*",
       ],
     },
     "types": [
@@ -36,7 +36,8 @@
     "useCache": false
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "stories/**/*"
   ],
   "exclude": [
     "node_modules",

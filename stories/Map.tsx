@@ -1,9 +1,14 @@
 import * as React from 'react';
 
+import { Earth } from '@earth/index';
+import { ViewerContainer } from './components/viewer-container';
+
 export default class Map extends React.Component<any, any> {
-	public componentDidMount() {}
+	public componentDidMount() {
+		const viewer = new Earth('viewer');
+	}
 
 	public render() {
-		return <div>This is a map component</div>;
+		return <ViewerContainer />;
 	}
 }
