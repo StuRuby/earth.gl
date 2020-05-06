@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "module": "esnext",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "jsx": "react",
+    "rootDir": "./",
+    "noEmit": false,
+    "downlevelIteration": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@earth": [
+        "src"
+      ],
+    },
+    "types": [
+      "reflect-metadata",
+      "node"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "babelCore": "@babel/core",
+    "useCache": false
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
