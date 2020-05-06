@@ -16,8 +16,8 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
-      "@earth": [
-        "src"
+      "@earth/*": [
+        "./src/*"
       ],
     },
     "types": [

@@ -12,7 +12,7 @@
 		"url": "git+https://github.com/StuRuby/earth.gl.git"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "StuRuby",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/StuRuby/earth.gl/issues"
@@ -52,6 +52,8 @@
 	"dependencies": {
 		"@storybook/theming": "^5.3.18",
 		"cesium": "^1.69.0",
+		"inversify": "^5.0.1",
+		"probe.gl": "^3.3.0-alpha.7",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"reflect-metadata": "^0.1.13"

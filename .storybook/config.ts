@@ -2,6 +2,12 @@ import { configure, addParameters } from "@storybook/react";
 import { create } from "@storybook/theming";
 
 addParameters({
+    isFullscreen: false,
+    showAddonsPanel: false,
+    showSearchBox: false,
+    panelPosition: 'bottom',
+    hierarchySeparator: /\./,
+    enableShortcuts: true,
     options: {
         theme: create({
             base: "light",
