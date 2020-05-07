@@ -19,6 +19,9 @@
       "@earth/*": [
         "./src/*",
       ],
+      "@core/*": [
+        "./src/modules/core/*"
+      ],
     },
     "types": [
       "reflect-metadata",
