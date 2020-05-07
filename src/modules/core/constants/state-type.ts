@@ -13,6 +13,6 @@ export const OVERLAY_STATE = {
     ...STATE
 };
 
-export const SIMULATION_STATE = {
+export const EFFECT_STATE = {
     ...STATE
 };

@@ -58,9 +58,9 @@ export const OVERLAY_EVENT_TYPE = {
 };
 
 /**
- * 模拟仿真事件类型
+ * 效果事件类型
  */
-export const SIMULATION_EVENT_TYPE = {
+export const EFFECT_EVENT_TYPE = {
     ...EVENT_TYPE
 };
 
