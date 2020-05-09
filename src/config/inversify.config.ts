@@ -9,7 +9,7 @@ import { Log } from '@core/debug/log';
 
 const rootContainer = new Container();
 rootContainer
-    .bind<LogInterface>(TYPES.LOG)
+    .bind<LogInterface>(TYPES.Log)
     .to(Log)
     .inSingletonScope();
 

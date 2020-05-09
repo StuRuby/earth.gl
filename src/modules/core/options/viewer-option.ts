@@ -1,15 +1,19 @@
 import * as _ from 'lodash';
-import * as Cesium from 'cesium';
 
+import { lazyInject } from '@earth/utils/inject';
+import { TYPES } from '@earth/config/inversify.types';
 import { Viewer } from '@core/viewer/viewer';
 import { ViewerOptionsInterface } from '@core/viewer/interface/viewer.interface';
+
 export class ViewerOption {
-    private readonly viewer: Viewer;
-    private options: ViewerOptionsInterface;
-    constructor(viewer: Viewer) {
-        this.viewer = viewer;
-        this.options = {};
+    @lazyInject(TYPES.Viewer)
+    private readonly viewer!: Viewer;
+    private options: ViewerOptionsInterface = {};
+
+    constructor() {
+        this.init();
     }
+
 
     // ---------------------------------------------------------------------------
     // Public Api

@@ -1,5 +1,5 @@
 export const TYPES = {
-    LOG: Symbol.for('log'),
-
+    Log: Symbol.for('log'),
+    Viewer: Symbol.for('Viewer')
 
 }

@@ -10,13 +10,14 @@ interface BabelPropertyDescriptor extends PropertyDescriptor {
     initializer(): any;
 }
 
+
 /**
  * 重写`lazyInject`，支持`babel`
  * @see https://github.com/inversify/InversifyJS/issues/1026#issuecomment-504936034
  */
 export const lazyInject = (identifier: interfaces.ServiceIdentifier<any>) => {
     const original = DECORATORS.lazyInject(identifier);
-    return function (this: any, proto: any, key: string, descriptor?: BabelPropertyDescriptor) {
+    return function (this: any, proto: any, key: string, descriptor?: BabelPropertyDescriptor): void {
         original.call(this, proto, key);
         if(descriptor) descriptor.initializer = () => proto[key];
     }
